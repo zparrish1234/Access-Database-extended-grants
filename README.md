@@ -1,6 +1,6 @@
 # extended-grants-database-model
 
-## Departmental Usage Overview
+# Departmental Usage Overview
 This data model was designed from the perspective of a Grants department 
 for a nonprofit responsible for the entire grant cycle. This included but
 not limited to grant opportunity tracking, application tracking, award tracking, 
@@ -15,7 +15,7 @@ Different roles interact with the database in different ways:
 - Leadership uses aggregated reports for oversight and planning.
 - Finance Department uses aggregated reports for accruals, and revenue tracking.
 
- ## Core Workflows Supported
+ # Core Workflows Supported
 
 1. Grant Opportunities
    - An opportunity comes from either a previous grant in past years / awards, or a contact.
@@ -32,7 +32,7 @@ Different roles interact with the database in different ways:
    - Staff can report on total spent vs budget
    - Leadership can identify overspent or underutilized grants
   
-## Design Rationale
+# Design Rationale
 
 - Awards and budgets are separated to allow multiple revisions over time
 - Line-level tables enable detailed reporting without overwriting historical data
