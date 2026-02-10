@@ -89,22 +89,22 @@ Historical accuracy is critical:
 Designing this database surfaced several important lessons about building real-world data systems for complex nonprofit operations.
 
 1. Real Life Is Not Clean or Predictable
-- Grant management rarely follows a perfect linear flow. Mid-year amendments, partial awards, overlapping funding periods, and evolving reporting requirements forced the design to remain flexible and extensible rather than overly rigid.
+     - Grant management rarely follows a perfect linear flow. Mid-year amendments, partial awards, overlapping funding periods, and evolving reporting requirements forced the design to remain flexible and extensible rather than overly rigid.
 Lesson: Design for change, not perfection.
 
 2. Separation of “Definition” vs “Instance” Is Essential
 Many early design challenges were solved by clearly separating:
-- Definitions (e.g., Deliverable Types, Submission Methods, Funding Sources)
-- Instances (e.g., Deliverable Instances, Award-Specific Submission Instructions)
+     - Definitions (e.g., Deliverable Types, Submission Methods, Funding Sources)
+     - Instances (e.g., Deliverable Instances, Award-Specific Submission Instructions)
 This avoided duplication while still allowing customization at the award level.
 Lesson: Normalize definitions, but allow instance-level overrides where the real world demands it.
 
 3. IDs Are for Databases — Humans Need Context
 Users think in terms of:
-- Program names
-- Fiscal years
-- Opportunity cycles
-- Sites and staff roles
+     - Program names
+     - Fiscal years
+     - Opportunity cycles
+     - Sites and staff roles
 They do not think in IDs.
 Lesson: Store IDs, display descriptive fields via queries and combo boxes.
 
@@ -127,11 +127,11 @@ Lesson: Clarity beats cleverness — explicit linking tables scale better.
 
 7. Anticipate Future Data, Not Just Current Needs
 Scenarios such as:
-- Site mergers
-- Additional award funding
-- Changing grantor contacts
-- Revised submission portals
-- Payroll imports and benefit calculations
+     - Site mergers
+     - Additional award funding
+     - Changing grantor contacts
+     - Revised submission portals
+     - Payroll imports and benefit calculations
   
 All reinforced the need to model history, not overwrite it.
 Lesson: If it might change, it probably will.
