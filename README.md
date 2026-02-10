@@ -32,7 +32,7 @@ Different roles interact with the database in different ways:
    - Staff can report on total spent vs budget
    - Leadership can identify overspent or underutilized grants
   
-![ERD diagram](ERDimages/ERD 8.27.png)
+![ERD diagram](ERDimages/ERD8.27.png)
   
 # Design Rationale
 
